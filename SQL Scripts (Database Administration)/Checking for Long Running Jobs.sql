@@ -2,7 +2,7 @@ USE msdb;
 GO
 
 /*
-Chec for long running jobs as Database Admin
+Check for long running jobs as Database Admin
 */
 BEGIN TRANSACTION
 DECLARE @ReturnCode INT
