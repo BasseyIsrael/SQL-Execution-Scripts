@@ -21,7 +21,8 @@
     FROM (
     	SELECT DISTINCT c.region_id AS child_id, p.region_id AS parent_id
     	FROM       demo_data.countries c 
-    	LEFT JOIN  demo_data.regions   p  ON p.region_id = c.region_id
+    	LEFT JOIN  demo_data.regions   p  
+        ON p.region_id = c.region_id
     	WHERE p.region_id IS NULL
     ) t;
 
@@ -33,7 +34,8 @@
     FROM (
         SELECT DISTINCT c.country_id AS child_id, p.country_id AS parent_id
     	FROM       demo_data.countries p 
-    	LEFT JOIN  demo_data.locations c  ON p.country_id = c.country_id
+    	LEFT JOIN  demo_data.locations c  
+        ON p.country_id = c.country_id
     	WHERE c.country_id IS NULL
     	  AND p.country_id IN('IT','JP','US','CA','CN','IN','AU','SG','UK','DE','CH','NL','MX')
 	) t;
