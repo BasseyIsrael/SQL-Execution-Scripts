@@ -1,4 +1,4 @@
--- Add gmail account as Profile's mail account fro activities
+-- Add gmail account as Profile's mail account for activities
 
 EXEC sys.sp_configure N'show advanced options',1
 GO
