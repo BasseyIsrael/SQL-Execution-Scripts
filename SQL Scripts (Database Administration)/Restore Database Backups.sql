@@ -320,11 +320,11 @@ INSERT INTO #orphan_users (database_name, user_name, sync_command_text, processe
 SELECT	DB_NAME(), dp.name, '' + '''''''' + ''USE ['' + @name + ''];  ALTER USER ['' + '''''''' + '' + dp.name + '' + '''''''' + ''] '' + ''WITH LOGIN = ['' + '''''''' + '' + sp.name + '' + '''''''' + ''];'' +  '''''''' +  '','' + ''0'' + 
 '' FROM    master.sys.server_principals AS sp
         INNER JOIN sys.database_principals AS dp ON sp.name = dp.name
-WHERE   sp.type = ''''S''''  --SQL_LOGIN
+WHERE   sp.type = ''''S''''  
 AND		sp.sid <> dp.sid
 ''
 
-		PRINT @SQL;
+		PRINT @SQL; --Debug
 
 		EXEC sys.sp_executesql @SQL
 
