@@ -1,4 +1,4 @@
---Set of scripts to be used in data validation for handling data values as presented in the tables in the database.
+--Set of scripts to be used in data validation for handling date values as presented in the tables in the database.
 
 --  Test 06 - - Verify NoNulls() where [date_last_updated] has no nulls in table [countries]
     SELECT ' Test 06' AS tst_id
