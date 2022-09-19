@@ -11,7 +11,7 @@
             SELECT CAST(SUM(CASE WHEN department_name IS NULL THEN 1 ELSE 0 END) AS DOUBLE PRECISION) / CAST(COUNT(*) AS DOUBLE PRECISION) AS nr_dept_nm
                  , CAST(SUM(CASE WHEN manager_id      IS NULL THEN 1 ELSE 0 END) AS DOUBLE PRECISION) / CAST(COUNT(*) AS DOUBLE PRECISION) AS nr_mgr_id
                  , CAST(SUM(CASE WHEN url             IS NULL THEN 1 ELSE 0 END) AS DOUBLE PRECISION) / CAST(COUNT(*) AS DOUBLE PRECISION) AS nr_url
-            FROM demo_hr.departments
+            FROM  demo_data.departments
         ) t
     )
     
@@ -35,8 +35,8 @@
             SELECT region_id, CAST(freq AS DOUBLE PRECISION) / CAST(den AS DOUBLE PRECISION) AS freq_rt
         	FROM (
         	    SELECT region_id, COUNT(*) AS freq
-        	    , (SELECT COUNT(*) FROM demo_hr.countries) AS den
-                FROM demo_hr.countries
+        	    , (SELECT COUNT(*) FROM  demo_data.countries) AS den
+                FROM  demo_data.countries
                 GROUP BY region_id
             ) t
         ) t2
