@@ -2,7 +2,7 @@ USE msdb;
 GO
 
 /******  
-This script can be used to ass a new operator to your SQL Database. BE careful with this script as
+This script can be used to add a new operator to your SQL Database. BE careful with this script as
 operator privilages can likely permanently or temporarily alter the Database structure and content.
 ******/
 
