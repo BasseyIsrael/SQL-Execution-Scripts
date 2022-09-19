@@ -8,7 +8,7 @@
 	WHERE region_id IS NULL;
 
 	
--- Test 01 ------------------------------------------------------------------------------------------
+-- Test 01 
 	SELECT 'Test 01' AS tst_id
          , CASE WHEN COUNT(*) > 0 THEN 'FAIL' ELSE 'P' END AS status
          , '"RS-4 Numeric" #2 - Verify NotNegative() where [region_id] >= 0 in table [countries]' AS tst_descr   
@@ -16,7 +16,7 @@
 	WHERE region_id < 0;
 
 	
--- Test 02 ------------------------------------------------------------------------------------------
+-- Test 02  
     SELECT 'Test 02' AS tst_id
          , CASE WHEN COUNT(*) > 0 THEN 'FAIL' ELSE 'P' END AS status
          , '"RS-4 Numeric" #3 - Verify NumericRange() where [employee_id] between 100 and 999 in table [employees]' AS tst_descr   
@@ -31,7 +31,7 @@
     WHERE status <> 'P';
 
 
--- Test 03 ------------------------------------------------------------------------------------------
+-- Test 03  
     SELECT 'Test 03' AS tst_id
          , CASE WHEN COUNT(*) > 0 THEN 'FAIL' ELSE 'P' END AS status
          , '"RS-4 Numeric" #4 - Verify InValueList() where [region_id] is in list (1,2,3,4) at table [countries]' AS tst_descr   
@@ -43,7 +43,7 @@
     WHERE status <> 'P';
 
 
--- Test 04 ------------------------------------------------------------------------------------------
+-- Test 04  
     SELECT 'Test 04' AS tst_id
          , CASE WHEN COUNT(*) > 0 THEN 'FAIL' ELSE 'P' END AS status
          , '"RS-4 Numeric" #5 - Verify NotInValueList() where [region_id] is not in list (97,98,99) at table [countries]' AS tst_descr   
@@ -55,7 +55,7 @@
     WHERE status <> 'P';
 
 
--- Test 05 ------------------------------------------------------------------------------------------
+-- Test 05  
     SELECT 'Test 05' AS tst_id
          , CASE WHEN COUNT(*) > 0 THEN 'FAIL' ELSE 'P' END AS status
          , '"RS-4 Numeric" #6 - Verify MultiFieldCompare() where [salary] x [commission_pct] <= $10,000 cap in table [employees]' AS tst_descr   
