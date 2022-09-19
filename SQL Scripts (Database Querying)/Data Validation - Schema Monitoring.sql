@@ -1,6 +1,5 @@
---  -----
--- RULE SET #8: DIFF CHECKS
---  -----
+--Set of scripts to be used in data validation for monitoring schemas present in the tables in the database.
+
 
 -- Test 01 - Verify TableStructure("BySQL") by comparing snapshot in SQL code vs actual schema/structure for table [locations] 
     WITH expected 
