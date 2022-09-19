@@ -1,0 +1,2 @@
+-- Direct SQL script to remove spaces and colons contained in dates to ensure uniformity in data values
+SELECT SUBSTRING(REPLACE(REPLACE((REPLACE((CONVERT(VARCHAR(32), CURRENT_TIMESTAMP, 120)), '-', '')), ':', ''), ' ', ''), 1, 12)
