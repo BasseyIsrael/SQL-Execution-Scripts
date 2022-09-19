@@ -1,7 +1,7 @@
 --Set of scripts to be used in data validation for checking text values as presented in the tables in the database.
 
 
---  Test 01  
+--  Test 01 - Verify NoNulls() where [country_name] has no nulls in table [countries]
     SELECT ' Test 01' AS tst_id
          , CASE WHEN COUNT(*) > 0 THEN 'FAIL' ELSE 'P' END AS status
          , '"RS-6 Text" #01 - Verify NoNulls() where [country_name] has no nulls in table [countries]' AS tst_descr   
@@ -13,7 +13,7 @@
     WHERE status <> 'P';
 
 
---  Test 02  
+--  Test 02 - Verify NoNullStrings() where "" nullstring in [country_name] at table [countries]
     SELECT ' Test 02' AS tst_id
          , CASE WHEN COUNT(*) > 0 THEN 'FAIL' ELSE 'P' END AS status
          , '"RS-6 Text" #02 - Verify NoNullStrings() where "" nullstring in [country_name] at table [countries]' AS tst_descr   
@@ -25,7 +25,7 @@
     WHERE status <> 'P';
 
 	
---  Test 03  
+--  Test 03 - Verify NoLeadTrailSpaces() at [country_name] in table [countries]
     SELECT ' Test 03' AS tst_id
          , CASE WHEN COUNT(*) > 0 THEN 'FAIL' ELSE 'P' END AS status
          , '"RS-6 Text" #03 - Verify NoLeadTrailSpaces() at [country_name] in table [countries]' AS tst_descr   
@@ -40,7 +40,7 @@
     WHERE status <> 'P';
 
 
---  Test 04  
+--  Test 04 - Verify InValueList() where [job_id] is in list of valid values for table [employees]
     SELECT ' Test 04' AS tst_id
          , CASE WHEN COUNT(*) > 0 THEN 'FAIL' ELSE 'P' END AS status
          , '"RS-6 Text" #04 - Verify InValueList() where [job_id] is in list of valid values for table [employees]' AS tst_descr   
@@ -56,7 +56,7 @@
     WHERE status <> 'P';
 
 
---  Test 05  
+--  Test 05 - Verify NotInValueList() where [job_id] not in list of invalid values at table [employees]
     SELECT ' Test 05' AS tst_id
          , CASE WHEN COUNT(*) > 0 THEN 'FAIL' ELSE 'P' END AS status
          , '"RS-6 Text" #05 - Verify NotInValueList() where [job_id] not in list of invalid values at table [employees]' AS tst_descr   
@@ -68,7 +68,7 @@
     WHERE status <> 'P';
 
 
---  Test 06  
+--  Test 06 - Verify MultiFieldCompare() where [email] = first letter of [first_name] + [last_name] in table [employees]
     SELECT ' Test 06' AS tst_id
          , CASE WHEN COUNT(*) > 0 THEN 'FAIL' ELSE 'P' END AS status
          , '"RS-6 Text" #06 - Verify MultiFieldCompare() where [email] = first letter of [first_name] + [last_name] in table [employees]' AS tst_descr   
@@ -82,7 +82,7 @@
     WHERE status <> 'P';
 
 
---  Test 07  
+--  Test 07 - Verify TextLength() where [phone_number] length is 12 or 18 characters in table [employees]
     SELECT ' Test 07' AS tst_id
          , CASE WHEN COUNT(*) > 0 THEN 'FAIL' ELSE 'P' END AS status
          , '"RS-6 Text" #07 - Verify TextLength() where [phone_number] length is 12 or 18 characters in table [employees]' AS tst_descr   
@@ -96,7 +96,7 @@
     WHERE status <> 'P';
 
 
---  Test 08  
+--  Test 08 - Verify UpperLowerCaseChars() where [lastname] has all LCase after first character and [job_id] is all UCase in table [employees]
     SELECT ' Test 08' AS tst_id
          , CASE WHEN COUNT(*) > 0 THEN 'FAIL' ELSE 'P' END AS status
          , '"RS-6 Text" #08 - Verify UpperLowerCaseChars() where [lastname] has all LCase after first character and [job_id] is all UCase in table [employees]' AS tst_descr   
@@ -111,7 +111,7 @@
     WHERE status <> 'P';
 	
 
---  Test 09  
+--  Test 09 - Verify AlphaNumericChars() where [employee_id] is numeric, and [lastname] is alpha in table [employees]
     SELECT ' Test 09' AS tst_id
          , CASE WHEN COUNT(*) > 0 THEN 'FAIL' ELSE 'P' END AS status
          , '"RS-6 Text" #09 - Verify AlphaNumericChars() where [employee_id] is numeric, and [lastname] is alpha in table [employees]' AS tst_descr   
@@ -126,8 +126,8 @@
     WHERE status <> 'P';
 
 
--- T030  
-    SELECT 'T030' AS tst_id
+--  Test 10 - Verify No_Quote_Chars() where [first_name] has no quotes or apostrophes in table [employees]
+    SELECT ' Test 10' AS tst_id
          , CASE WHEN COUNT(*) > 0 THEN 'FAIL' ELSE 'P' END AS status
          , '"RS-6 Text" #10 - Verify No_Quote_Chars() where [first_name] has no quotes or apostrophes in table [employees]' AS tst_descr   
     FROM (
@@ -141,8 +141,8 @@
     WHERE status <> 'P';
 
 
--- T031  
-    SELECT 'T031' AS tst_id
+--  Test 11 - Verify No_CRLF_Chars() where [last_name] has no Carriage Returns (CHAR-13) or Line Feeds (CHAR-10) in table [employees]
+    SELECT ' Test 11' AS tst_id
          , CASE WHEN COUNT(*) > 0 THEN 'FAIL' ELSE 'P' END AS status
          , '"RS-6 Text" #11 - Verify No_CRLF_Chars() where [last_name] has no Carriage Returns (CHAR-13) or Line Feeds (CHAR-10) in table [employees]' AS tst_descr   
     FROM (
@@ -158,8 +158,8 @@
     WHERE status <> 'P';
 
 
--- T032  
-    SELECT 'T032' AS tst_id
+--  Test 12 - Verify No_TAB_Chars() where [last_name] has no TAB characters (CHAR-9) in table [employees]
+    SELECT ' Test 12' AS tst_id
          , CASE WHEN COUNT(*) > 0 THEN 'FAIL' ELSE 'P' END AS status
          , '"RS-6 Text" #12 - Verify No_TAB_Chars() where [last_name] has no TAB characters (CHAR-9) in table [employees]' AS tst_descr   
     FROM (
@@ -172,8 +172,8 @@
     WHERE status <> 'P';
 
 
--- T033  
-    SELECT 'T033' AS tst_id
+--  Test 13 - Verify No_NBS_Chars() where [last_name] has no Non-Breaking-Spaces (CHAR-160) in table [employees]
+    SELECT ' Test 13' AS tst_id
          , CASE WHEN COUNT(*) > 0 THEN 'FAIL' ELSE 'P' END AS status
          , '"RS-6 Text" #13 - Verify No_NBS_Chars() where [last_name] has no Non-Breaking-Spaces (CHAR-160) in table [employees]' AS tst_descr   
     FROM (
@@ -186,8 +186,8 @@
     WHERE status <> 'P';
 
 
--- T034  
-    SELECT 'T034' AS tst_id
+--  Test 14 - Verify No_EmDash_Chars() where [last_name] has an EmDash character (CHAR-151...common Microsoft Word "--" conversion causing data load issues) in table [employees]
+    SELECT ' Test 14' AS tst_id
          , CASE WHEN COUNT(*) > 0 THEN 'FAIL' ELSE 'P' END AS status
          , '"RS-6 Text" #14 - Verify No_EmDash_Chars() where [last_name] has an EmDash character (CHAR-151...common Microsoft Word "--" conversion causing data load issues) in table [employees]' AS tst_descr   
     FROM (
@@ -200,8 +200,8 @@
     WHERE status <> 'P';
 
 
--- T035  
-    SELECT 'T035' AS tst_id
+--  Test 15 - Verify No_VTFFNEL_Chars() where [last_name] has Vertical Tabs (CHAR-11), Form Feeds (CHAR-12) or Next Lines (CHAR-133) in table [employees]
+    SELECT ' Test 15' AS tst_id
          , CASE WHEN COUNT(*) > 0 THEN 'FAIL' ELSE 'P' END AS status
          , '"RS-6 Text" #15 - Verify No_VTFFNEL_Chars() where [last_name] has Vertical Tabs (CHAR-11), Form Feeds (CHAR-12) or Next Lines (CHAR-133) in table [employees]' AS tst_descr   
     FROM (
@@ -216,8 +216,8 @@
     WHERE status <> 'P';
 
 
--- T036  
-    SELECT 'T036' AS tst_id
+--  Test 16 - Verify No_PeriodDash_Chars() where [last_name] has periods or dashes in table [employees]
+    SELECT ' Test 16' AS tst_id
          , CASE WHEN COUNT(*) > 0 THEN 'FAIL' ELSE 'P' END AS status
          , '"RS-6 Text" #16 - Verify No_PeriodDash_Chars() where [last_name] has periods or dashes in table [employees]' AS tst_descr   
     FROM (
@@ -231,8 +231,8 @@
     WHERE status <> 'P';
 
 
--- T037  
-    SELECT 'T037' AS tst_id
+--  Test 17 - Verify NoBadChars() where [last_name] has no funky punctuation ",/:()&#?;" in table [employees]'
+    SELECT ' Test 17' AS tst_id
          , CASE WHEN COUNT(*) > 0 THEN 'FAIL' ELSE 'P' END AS status
          , '"RS-6 Text" #17 - Verify NoBadChars() where [last_name] has no funky punctuation ",/:()&#?;" in table [employees]' AS tst_descr   
     FROM (
@@ -243,8 +243,8 @@
     WHERE status <> 'P';
 
 
--- T038  
-    SELECT 'T038' AS tst_id
+--  Test 18 - Verify OnlyAllowedChars() where [phone_number] only has characters ".0123456789" in table [employees]
+    SELECT ' Test 18' AS tst_id
          , CASE WHEN COUNT(*) > 0 THEN 'FAIL' ELSE 'P' END AS status
          , '"RS-6 Text" #18 - Verify OnlyAllowedChars() where [phone_number] only has characters ".0123456789" in table [employees]' AS tst_descr   
     FROM (
@@ -256,8 +256,8 @@
 
 
 
--- T039  
-    SELECT 'T039' AS tst_id
+--  Test 19 - Verify LikeWildcards() where [phone_number] contains a ''.'' and matches valid patterns in table [employees]
+    SELECT ' Test 19' AS tst_id
          , CASE WHEN COUNT(*) > 0 THEN 'FAIL' ELSE 'P' END AS status
          , '"RS-6 Text" #19 - Verify LikeWildcards() where [phone_number] contains a ''.'' and matches valid patterns in table [employees]' AS tst_descr   
     FROM (
@@ -272,8 +272,8 @@
     WHERE status <> 'P';
 
 
--- T040  
-    SELECT 'T040' AS tst_id
+--  Test 20 - Verify IsNumeric() where [zip5] will convert to numeric in table [employees]
+    SELECT ' Test 20' AS tst_id
          , CASE WHEN COUNT(*) > 0 THEN 'FAIL' ELSE 'P' END AS status
          , '"RS-6 Text" #20 - Verify IsNumeric() where [zip5] will convert to numeric in table [employees]' AS tst_descr   
     FROM (
@@ -284,8 +284,8 @@
     WHERE status <> 'P';
 
 
--- T041  
-    SELECT 'T041' AS tst_id
+--  Test 21 - Verify IsDate("yyyymmdd") where [some_date_fmt1] has date fmt="yyyymmd" in table [employees]
+    SELECT ' Test 21' AS tst_id
          , CASE WHEN COUNT(*) > 0 THEN 'FAIL' ELSE 'P' END AS status
          , '"RS-6 Text" #21 - Verify IsDate("yyyymmdd") where [some_date_fmt1] has date fmt="yyyymmd" in table [employees]' AS tst_descr   
     FROM (
@@ -304,8 +304,8 @@
     WHERE status <> 'P';
 
 
--- T042  
-    SELECT 'T042' AS tst_id
+--  Test 22 - Verify IsDate("mm/dd/yyyy") where [some_date_fmt2] has date fmt="mm/dd/yyyy" in table [employees]
+    SELECT ' Test 22' AS tst_id
          , '"RS-6 Text" #22 - Verify IsDate("mm/dd/yyyy") where [some_date_fmt2] has date fmt="mm/dd/yyyy" in table [employees]' AS tst_descr   
          , CASE WHEN COUNT(*) > 0 THEN 'FAIL' ELSE 'P' END AS status
     FROM (
@@ -324,8 +324,8 @@
     WHERE status <> 'P';
 
 
--- T043  
-    SELECT 'T043' AS tst_id
+--  Test 23 - Verify IsDate("mm-dd-yyyy") where [some_date_fmt3] has date fmt="mm-dd-yyyy" in table [employees]
+    SELECT ' Test 23' AS tst_id
          , CASE WHEN COUNT(*) > 0 THEN 'FAIL' ELSE 'P' END AS status
          , '"RS-6 Text" #23 - Verify IsDate("mm-dd-yyyy") where [some_date_fmt3] has date fmt="mm-dd-yyyy" in table [employees]' AS tst_descr   
     FROM (
@@ -344,8 +344,8 @@
     WHERE status <> 'P';
 
 
--- T044  
-    SELECT 'T044' AS tst_id
+--  Test 24 - Verify IsDate("yyyy-mm-dd") where [some_date_fmt4] has date fmt="yyyy-mm-dd" in table [employees]
+    SELECT ' Test 24' AS tst_id
          , CASE WHEN COUNT(*) > 0 THEN 'FAIL' ELSE 'P' END AS status
          , '"RS-6 Text" #24 - Verify IsDate("yyyy-mm-dd") where [some_date_fmt4] has date fmt="yyyy-mm-dd" in table [employees]' AS tst_descr   
     FROM (
