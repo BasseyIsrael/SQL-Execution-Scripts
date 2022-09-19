@@ -1,9 +1,9 @@
 USE msdb;
 GO
 
-/****** 
-
- ******/
+/*
+Restore previous backups created in a database, for database maintenance with admin rights.
+*/
 BEGIN TRANSACTION
 DECLARE @ReturnCode INT
 SELECT @ReturnCode = 0
@@ -303,7 +303,7 @@ FROM master.sys.databases AS D
 			WHERE	IsActive = 1
 		) AS r ON r.RestoreDatabaseNameAs = d.name
 
--- While loop to find all the orphan users from all the user databases
+-- While loop to find all the orphaned users from all the user databases
 WHILE (SELECT COUNT(processed) FROM #databases WHERE processed = 0) > 0
 	BEGIN
 		SELECT TOP 1
