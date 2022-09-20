@@ -80,7 +80,7 @@ The scripts contained in this repo are available in two folders:
   - [Restore Database Backups](#restore-database-backups-view)
   - [Set Default Database](#set-default-database-view)
   
-============================================================================
+===========================================================================
 
 # **Explore Codes**
 
@@ -89,7 +89,7 @@ The scripts contained in this repo are available in two folders:
 
 <div align='justify'>
 
-## **Creating a Database.** [(View)](https://github.com/BasseyIsrael/Excel-VBA-Scripts/blob/main/VBA%20Scripts/Check%20File%20Existence.vb)
+## **Creating a Database.** [(View)](https://github.com/BasseyIsrael/SQL-Execution-Scripts/blob/main/SQL%20Scripts%20(Database%20Querying)/Create%20Tables%20in%20a%20Database.sql)
 
 
 Following the aim of this repository, a simple database was created using  simple create script. The commands used give you ability to add comments to the database, and decide on the accessibility provided to the database with the GRANT command. Click on "View" to access the code. Feel free to modify it for your personal use.
