@@ -101,7 +101,7 @@ Following the aim of this repository, a simple database was created using  simpl
 With the demo database created, tables to work with in the schema can be created. This is the use of this part of the repository. here, you can find scripts that can help you create tables in a database with the necessary constraints and data types. For this repo, 8 tables are presented. Click on "View" to access the code. Feel free to modify it for your personal use.
 
 
-## **Data Validation - Checking Numeric Values** [(View)](https://github.com/BasseyIsrael/Excel-VBA-Scripts/blob/main/VBA%20Scripts/Data%20Reset.vb)
+## **Data Validation - Checking Numeric Values** [(View)](https://github.com/BasseyIsrael/SQL-Execution-Scripts/blob/main/SQL%20Scripts%20(Database%20Querying)/Data%20Validation%20-%20Checking%20Numeric%20Values.sql)
 
 
 Handling Numeric values in a table present in a database is very key to querying and processing data. Different scripts for handling numeric values are presented here. Click on "View" to access the code. Feel free to modify it for your personal use.
@@ -114,7 +114,7 @@ Handling Numeric values in a table present in a database is very key to querying
 - `Test 05` - Verify MultiFieldCompare() where column 1 x column 2 <= $10,000 cap in a table
 
 
-## **Data Validation - Checking Regular Expressions** [(View)](https://github.com/BasseyIsrael/Excel-VBA-Scripts/blob/main/VBA%20Scripts/File%20Names.cls)
+## **Data Validation - Checking Regular Expressions** [(View)](https://github.com/BasseyIsrael/SQL-Execution-Scripts/blob/main/SQL%20Scripts%20(Database%20Querying)/Data%20Validation%20-%20Checking%20Regular%20Expressions.sql)
 
 Work with character combinations easily with regular expressions when working with data. Different tests are presented here. Click on "View" to access the code. Feel free to modify it for your personal use.
 
@@ -135,14 +135,14 @@ Work with character combinations easily with regular expressions when working wi
 - `Test 14` - Test 14 - Verify RegExp("IsUrl") where [url] matches RegEx pattern "(http)(s)?(:\/\/)" in table column.
 
 
-## **Data Validation - Checking Text Values** [(View)](https://github.com/BasseyIsrael/Excel-VBA-Scripts/blob/main/VBA%20Scripts/Import%20or%20Copy%20Data.vb)
+## **Data Validation - Checking Text Values** [(View)](https://github.com/BasseyIsrael/SQL-Execution-Scripts/blob/main/SQL%20Scripts%20(Database%20Querying)/Data%20Validation%20-%20Checking%20Text%20Values.sql)
 
 
 
 
 
 
-## **Data Validation - Counting Rows** [(View)](https://github.com/BasseyIsrael/Excel-VBA-Scripts/blob/main/VBA%20Scripts/List%20of%20WS.vb)
+## **Data Validation - Counting Rows** [(View)](https://github.com/BasseyIsrael/SQL-Execution-Scripts/blob/main/SQL%20Scripts%20(Database%20Querying)/Data%20Validation%20-%20Counting%20Rows.sql)
 
 
 Options for counting rows are presented here. Click on "View" to access the code. Feel free to modify it for your personal use.
@@ -153,7 +153,7 @@ Options for counting rows are presented here. Click on "View" to access the code
 - `Test 04` - Verify RecentRowCount() >= 5 in specific column where update has occured in past
 
 
-## **Data Validation - Handling Date Values** [(View)](https://github.com/BasseyIsrael/Excel-VBA-Scripts/blob/main/VBA%20Scripts/Lookup%20Data.vb)
+## **Data Validation - Handling Date Values** [(View)](https://github.com/BasseyIsrael/SQL-Execution-Scripts/blob/main/SQL%20Scripts%20(Database%20Querying)/Data%20Validation%20-%20Handling%20Date%20Values.sql)
 
 
 Set of scripts to be used in data validation for handling date values as presented in the tables in the database. Click on "View" to access the code. Feel free to modify it for your personal use.
@@ -166,7 +166,7 @@ Set of scripts to be used in data validation for handling date values as present
 
 
 
-## **Data Validation - Known Defect Checks** [(View)](https://github.com/BasseyIsrael/Excel-VBA-Scripts/blob/main/VBA%20Scripts/Rename%20Worksheets.vb)
+## **Data Validation - Known Defect Checks** [(View)](https://github.com/BasseyIsrael/SQL-Execution-Scripts/blob/main/SQL%20Scripts%20(Database%20Querying)/Data%20Validation%20-%20Known%20Defect%20Checks.sql)
 
 
 Set of scripts to be used in data validation for checking known defects with defects regression that come up over time in the database are presented here.  Click on "View" to access the code. Feel free to modify it for your personal use.
@@ -179,10 +179,10 @@ Set of scripts to be used in data validation for checking known defects with def
 
 
 
-## **Data Validation - Schema Monitoring** [(View)](https://github.com/BasseyIsrael/Excel-VBA-Scripts/blob/main/VBA%20Scripts/Save%20and%20send%20email.vb)
+## **Data Validation - Schema Monitoring** [(View)](https://github.com/BasseyIsrael/SQL-Execution-Scripts/blob/main/SQL%20Scripts%20(Database%20Querying)/Data%20Validation%20-%20Schema%20Monitoring.sql)
 
 
---Set of scripts to be used in data validation for monitoring schemas present in the tables in the database are presented here.  Click on "View" to access the code. Feel free to modify it for your personal use.
+Set of scripts to be used in data validation for monitoring schemas present in the tables in the database are presented here.  Click on "View" to access the code. Feel free to modify it for your personal use.
 
 - `Test 01` - Verify TableStructure("BySQL") by comparing snapshot in SQL code vs actual schema/structure for table
 - `Test 02` - Verify TableData("BySQL") - Data should not change for table
@@ -190,28 +190,38 @@ Set of scripts to be used in data validation for checking known defects with def
 
 
 
-## **Data Validation - Threshold & Relativity Analysis** [(View)](https://github.com/BasseyIsrael/Excel-VBA-Scripts/blob/main/VBA%20Scripts/Save%20as%20CSV.vb)
+## **Data Validation - Threshold & Relativity Analysis** [(View)](https://github.com/BasseyIsrael/SQL-Execution-Scripts/blob/main/SQL%20Scripts%20(Database%20Querying)/Data%20Validation%20-%20Threshold%20%26%20Relativity%20Analysis.sql)
 
-Still working across multiple worksheets in a workbook, a script is provided to give the user the ability to save all the worksheets available in the workbook as separate csv files. A naming convention is also provided in the script to avoid the hassle of having to manually input the names of all the files as they are saved.
-Click on "View" to access the code. Feel free to modify it for your personal use.
+Set of scripts to be used in data validation for defining thresholds as presented in the tables in the database are presented here.  Click on "View" to access the code. Feel free to modify it for your personal use.
 
-
-## **Data Validation - Working with Keys** [(View)](https://github.com/BasseyIsrael/Excel-VBA-Scripts/blob/main/VBA%20Scripts/Save%20as%20xlsx.vb)
-
-Still working across multiple worksheets in a workbook, a script is provided to give the user the ability to save all the worksheets available in the workbook as separate csv files. A naming convention is also provided in the script to avoid the hassle of having to manually input the names of all the files as they are saved.
-Click on "View" to access the code. Feel free to modify it for your personal use.
+-- `Test 01` - Verify NullRateThresholds() for specific columns (eg: columnX is NULL for < 5% of the data ) in table
+-- `Test 02` - Verify ValueFrequencyThresholds()" for column values
 
 
-## **Query Scripts** [(View)](https://github.com/BasseyIsrael/Excel-VBA-Scripts/blob/main/VBA%20Scripts/Save%20File.vb)
 
-With this script, one can quickly save a file in any specified file format/extension by the click of a button or an assigned shortcut. This script, though simple, has many applications including when building userforms or building dashboards in excel. This can also be extended to other Microsoft Apps that support VBA.
-Click on "View" to access the code. Feel free to modify it for your personal use.
+## **Data Validation - Working with Keys** [(View)](https://github.com/BasseyIsrael/SQL-Execution-Scripts/blob/main/SQL%20Scripts%20(Database%20Querying)/Data%20Validation%20-%20Working%20with%20Keys.sql)
+
+Set of scripts to be used in data validation for working with foreign keys in relation to parents as presented in the tables in the database are presented here.  Click on "View" to access the code. Feel free to modify it for your personal use.
+
+- `Test 01` - Verify UkeyHasNoDups() for a unique key UKey in table
+- `Test 02` - Verify FKeyChildNotOrphans() at child foreign key in table
+- `Test 03` - Verify FKeyParentHasChildren() at parent foreign key in table for select data unit
 
 
-## **Remove Spaces and Colons from Dates** [(View)](https://github.com/BasseyIsrael/Excel-VBA-Scripts/blob/main/VBA%20Scripts/Screen%20Settings.vb)
+## **Query Scripts** [(View)](https://github.com/BasseyIsrael/SQL-Execution-Scripts/blob/main/SQL%20Scripts%20(Database%20Querying)/Query%20Scripts.sql)
+
+For simple queries on data, scripts are presented here. This section is regularly updated with reference to specific leetcode  solutions and relevant generic queries independent of field of application.
+
+- `Query 01` - SQL Script to combine two tables [Table 1] and [Table 2]
+- `Query 03` - SQL Script to obtain consecutive numbers in a column using LEAD and LAG Functions
+- `Query 04` - SQL Script to define customers who never made an order, combining tables of the [Table 1] and [Table 2]
+- `Query 05` - Find users with duplicate emails
+- `Query 06` - Delete duplicate emails found in the table
+
+## **Remove Spaces and Colons from Dates** [(View)](https://github.com/BasseyIsrael/SQL-Execution-Scripts/blob/main/SQL%20Scripts%20(Database%20Querying)/Remove%20Spaces%20and%20Colons%20from%20Dates.sql)
 
 
-When working with dashboards, it is sometimes desirable to view the worksheet in fulll screen format to reduce distractions and provide real estate for analysis. Two sub-routines are provided here that help the user to toggle full screen in excel. With this, presentations using excel becomes way easier and more space is provided for analysis elements.
+Direct SQL script to remove spaces and colons contained in dates to ensure uniformity in date values
 Click on "View" to access the code. Feel free to modify it for your personal use.
 
 ---
