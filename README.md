@@ -226,11 +226,13 @@ Click on "View" to access the code. Feel free to modify it for your personal use
 
 ---
 
+# Administrator Codes
+
 
 ## **Add a New Database Operator.** [(View)](https://github.com/BasseyIsrael/Excel-VBA-Scripts/blob/main/VBA%20Scripts/Select%20a%20file.vb)
 
 
-You can upload files in excel or upload files when working with a userform. This script can be attached to other functionalities in excel to achieve tasks that involve interacting with other files. The script opens a folder directory and the file types that are accessible by the user can be defined in the script.
+This script can be used to add a new operator to your SQL Database. BE careful with this script as operator privilages can likely permanently or temporarily alter the Database structure and content.
 Click on "View" to access the code. Feel free to modify it for your personal use.
 
 
@@ -238,34 +240,36 @@ Click on "View" to access the code. Feel free to modify it for your personal use
 ## **Add Alerts and Notifications.** [(View)](https://github.com/BasseyIsrael/Excel-VBA-Scripts/blob/main/VBA%20Scripts/Check%20File%20Existence.vb)
 
 
-This script provides the user the option to search through a folder to check if the filenames present in a worksheet range are present in teh folder. The code can be applied as a stand-alone to keep track of a personal library, or it can also be used on a larger scale for document control in an organizational setting. The script requires the user to input the folder directory to be scanned through. A function is also present in the script that outputs a true or false. This can be used in simple cases. Click on "View" to access the code. Feel free to modify it for your personal use.
+Add alerts and notifications to job activities in SQL Database. Apply this to get regular updates, useful especially when there are multiple operators in a Database Server, there is a supervisor, or for general accountability and logging. Click on "View" to access the code. Feel free to modify it for your personal use.
 
 
 ## **Add Email Notification for Failed SQL Server Agent Jobs.**[(View)](https://github.com/BasseyIsrael/Excel-VBA-Scripts/blob/main/VBA%20Scripts/Check%20WS%20Existence.vb)
 
 
-When working with large files with multiple worksheets, it's easy to lose track of a worksheet especially when all you want to do is to check if the worksheet is present in the workbook before moving on to a new workbook. This script helps the user to quickly scan through the worksheets in a given workbook to confirm the existence of a given worksheet. With this, file searching becomes way easier especially for large files. You can expand this code to achieve more, like opening the specific worksheet with just one line of code. Click on "View" to access the code. Feel free to modify it for your personal use.
+Create direct email notifications for failed jobs with SQL script. Here an easy way to setup alerts for all sql agent jobs. In this case, it is advisable to use group email address rather than individuals to make this a one-time setup. Click on "View" to access the code. Feel free to modify it for your personal use.
 
 
 ## **Add Gmail as Database Main Account** [(View)](https://github.com/BasseyIsrael/Excel-VBA-Scripts/blob/main/VBA%20Scripts/Data%20Reset.vb)
 
 
-Following a data import from an external source, needs might arise to reset the data, clear contents and reload a new set of data especially when working with batch data or working on a template. Analysts may find this useful when building dashboards and there is need to reload data.
+Add gmail account as Profile's mail account for activities logging and monitoring purposes.
 Click on "View" to access the code. Feel free to modify it for your personal use.
 
 
 ## **Add Linked Server** [(View)](https://github.com/BasseyIsrael/Excel-VBA-Scripts/blob/main/VBA%20Scripts/File%20Names.cls)
 
 
-This script gives the user the option to obtain the list if files present in a folder based on a file type. The list obtained from the code is printed on an excel worksheet already specified. This is especially useful when managing a library (large scale or personal). Beyond the management of a library,m this code can also be applied in document control when creating a master list of documents when it is not provided by default by the document management system already in place.
-Click on "View" to access the code. Feel free to modify it for your personal use.
+Add Linked server passing the login used for Kerberos AUTH. Click on "View" to access the code. Feel free to modify it for your personal use.
 
 
 
 ## **Add User to Azure Database and Add Role Membership** [(View)](https://github.com/BasseyIsrael/Excel-VBA-Scripts/blob/main/VBA%20Scripts/Import%20or%20Copy%20Data.vb)
 
-
-This script gives the user the ability to import data from an external excel source. The script opens a file selection window where the source file can be selected and the data is copied to the new worksheet and pasted as values. A box is also needed for the filename to be printed to. The imported data can be used by ana analyst to perform a form of routine analysis on a template, or create dashboards when working woth batch data. A script is also provided to clear the imported data and it can be accessed [here](https://github.com/BasseyIsrael/Excel-VBA-Scripts/blob/main/VBA%20Scripts/Data%20Reset.vb).
+Apply this section to ass a user to Azure database and also include the personnel's role membership. It should be noted that for this script, database compatibility level must be 130 for string_split function to work otherwise adding the user to datbase role will fail.
+Use ALTER DATABASE to change the compatibility level of the database. The new compatibility level setting for a database takes effect when a `USE <database>` command is issued, or a new login is processed with that database as the default database context. To view the current compatibility level of a database, 
+query the compatibility_level column in the sys.databases catalog view.
+Change connection to user database and replace the user name then list the database role(s) in a comma seperated list.
+If creating a sql user with password set the `@Password` to a value, if it's a domain account set the `@Password` to null
 Click on "View" to access the code. Feel free to modify it for your personal use.
 
 
@@ -273,92 +277,78 @@ Click on "View" to access the code. Feel free to modify it for your personal use
 ## **Checking for Long Running Jobs** [(View)](https://github.com/BasseyIsrael/Excel-VBA-Scripts/blob/main/VBA%20Scripts/List%20of%20WS.vb)
 
 
-A management technique for handling large files is provided with this script. Here, you can provide a list of all the worksheets present in a workbook. This is mostly applicable in an organizational context for reports logging and access management. The use of this script can help speed up the process of urgent reporting for multiple files.
-Click on "View" to access the code. Feel free to modify it for your personal use.
+Check for long running jobs as Database Admin. Click on "View" to access the code. Feel free to modify it for your personal use.
 
 
 ## **Create Foreign Key Information** [(View)](https://github.com/BasseyIsrael/Excel-VBA-Scripts/blob/main/VBA%20Scripts/Lookup%20Data.vb)
 
 
-Here, a function is provided to perform lookup on data more easily than the excel builtin lookup functions. Arguments are provided in the function and they are easy to use. Use this custom function in your workbook or you can attach iit to a larger block of code as you would like to use it.  
-Click on "View" to access the code. Feel free to modify it for your personal use.
+Create Foreign Key information and store information on a table. Click on "View" to access the code. Feel free to modify it for your personal use.
 
 ## **Create Transaction Log Table** [(View)](https://github.com/BasseyIsrael/Excel-VBA-Scripts/blob/main/VBA%20Scripts/Select%20a%20file.vb)
 
 
-You can upload files in excel or upload files when working with a userform. This script can be attached to other functionalities in excel to achieve tasks that involve interacting with other files. The script opens a folder directory and the file types that are accessible by the user can be defined in the script.
-Click on "View" to access the code. Feel free to modify it for your personal use.
+Monitoring transaction activities in a database is one of the key functionalities of an adminisrator. Use this script to create a transction log table to monitor transaction activities on database. Click on "View" to access the code. Feel free to modify it for your personal use.
 
 ## **Database Integrity Check** [(View)](https://github.com/BasseyIsrael/Excel-VBA-Scripts/blob/main/VBA%20Scripts/Rename%20Worksheets.vb)
 
 
-This script helps one to rename all the worksheets in your workbook based on cell value. When there are several worksheets in a workbook, renaming all of them one after the other could become a herculean task. However, with the extreme likelihood that there is a uniformity in the cell header or a specific defining cell common to all the worksheets, this script can easily attach names to all the worksheets bases on those defining cell values. The code block is expandable to carry more functionalities.
-Click on "View" to access the code. Feel free to modify it for your personal use.
+Database integrity checks on user databases for purposes involving database maintenance. 
+This can be a running script or a periodic manually operated process for your database. Click on "View" to access the code. Feel free to modify it for your personal use.
 
 
 
 ## **Drop Foreign Key and Create Foreign Key** [(View)](https://github.com/BasseyIsrael/Excel-VBA-Scripts/blob/main/VBA%20Scripts/Save%20and%20send%20email.vb)
 
-In this case, reporting and sending updates is optimized by giving a user the ability to automatically save a reporting sheet as a pdf file into a specified file location and sending an email to a specific recipient with the saved pdf file attached to the email on outlook. A use case of this script is when a routine update on a specific analysis is required by a manager or a set of staff. A window to select the folder is used in this case however, one can simply change the save folder to a constant folder path. A date cell is also advisable to have so it can be easy to track the files  that have been saved. In an organizational context, a cell containing the document number can be used in place of "current date" for the filename.
-Click on "View" to access the code. Feel free to modify it for your personal use.
+Simple script to drop foreign keys from database and to recreate foreign keys constraints in a database. Click on "View" to access the code. Feel free to modify it for your personal use.
 
 ## **Drop Old Tables** [(View)](https://github.com/BasseyIsrael/Excel-VBA-Scripts/blob/main/VBA%20Scripts/Save%20as%20CSV.vb)
 
-Still working across multiple worksheets in a workbook, a script is provided to give the user the ability to save all the worksheets available in the workbook as separate csv files. A naming convention is also provided in the script to avoid the hassle of having to manually input the names of all the files as they are saved.
-Click on "View" to access the code. Feel free to modify it for your personal use.
+Drop old tables existing in database following a specified period and use cases. Ensure that this script is properly monitored as dropping tables often leads to dangerous results in database administration. Click on "View" to access the code. Feel free to modify it for your personal use.
 
 
 ## **Drop Statement Executed from Stored Table** [(View)](https://github.com/BasseyIsrael/Excel-VBA-Scripts/blob/main/VBA%20Scripts/Save%20as%20xlsx.vb)
 
-Still working across multiple worksheets in a workbook, a script is provided to give the user the ability to save all the worksheets available in the workbook as separate csv files. A naming convention is also provided in the script to avoid the hassle of having to manually input the names of all the files as they are saved.
-Click on "View" to access the code. Feel free to modify it for your personal use.
+This job step specifically drops foreign key constraints to make data purging easier. Click on "View" to access the code. Feel free to modify it for your personal use.
 
 
 ## **Find an ID Gap in a Table** [(View)](https://github.com/BasseyIsrael/Excel-VBA-Scripts/blob/main/VBA%20Scripts/Save%20File.vb)
 
-With this script, one can quickly save a file in any specified file format/extension by the click of a button or an assigned shortcut. This script, though simple, has many applications including when building userforms or building dashboards in excel. This can also be extended to other Microsoft Apps that support VBA.
+WArrange a table in a database to find gaps in the IDs listed in the table using arrangment commands `(DENSE RANK, MIN, MAX, ORDER BY)`. 
 Click on "View" to access the code. Feel free to modify it for your personal use.
 
 
 ## **Find Orphaned Users in Each User Database** [(View)](https://github.com/BasseyIsrael/Excel-VBA-Scripts/blob/main/VBA%20Scripts/Screen%20Settings.vb)
 
 
-When working with dashboards, it is sometimes desirable to view the worksheet in fulll screen format to reduce distractions and provide real estate for analysis. Two sub-routines are provided here that help the user to toggle full screen in excel. With this, presentations using excel becomes way easier and more space is provided for analysis elements.
-Click on "View" to access the code. Feel free to modify it for your personal use.
+Script to discover orphaned database users linked to a/an SQL Server login. This is necessary for access control to a database following context and permission. Click on "View" to access the code. Feel free to modify it for your personal use.
 
 
 ## **Know when a Table is updated** [(View)](https://github.com/BasseyIsrael/Excel-VBA-Scripts/blob/main/VBA%20Scripts/Select%20a%20file.vb)
 
 
-You can upload files in excel or upload files when working with a userform. This script can be attached to other functionalities in excel to achieve tasks that involve interacting with other files. The script opens a folder directory and the file types that are accessible by the user can be defined in the script.
-Click on "View" to access the code. Feel free to modify it for your personal use.
+Obtain data containing previous updates made to a table including lookups, scans, seeks, and object information. Click on "View" to access the code. Feel free to modify it for your personal use.
 
 ## **Obtain Server Role Membership** [(View)](https://github.com/BasseyIsrael/Excel-VBA-Scripts/blob/main/VBA%20Scripts/Select%20a%20file.vb)
 
 
-You can upload files in excel or upload files when working with a userform. This script can be attached to other functionalities in excel to achieve tasks that involve interacting with other files. The script opens a folder directory and the file types that are accessible by the user can be defined in the script.
-Click on "View" to access the code. Feel free to modify it for your personal use.
+Obtain Server role membership on SQL server by a Database Administrator. Click on "View" to access the code. Feel free to modify it for your personal use.
 
 ## **Recreate Foreign Keys** [(View)](https://github.com/BasseyIsrael/Excel-VBA-Scripts/blob/main/VBA%20Scripts/Select%20a%20file.vb)
 
 
-You can upload files in excel or upload files when working with a userform. This script can be attached to other functionalities in excel to achieve tasks that involve interacting with other files. The script opens a folder directory and the file types that are accessible by the user can be defined in the script.
-Click on "View" to access the code. Feel free to modify it for your personal use.
+Following data purge, this script can be used to recreate foreign key constraints used in a database. Click on "View" to access the code. Feel free to modify it for your personal use.
 
 ## **Remove SA Account** [(View)](https://github.com/BasseyIsrael/Excel-VBA-Scripts/blob/main/VBA%20Scripts/Select%20a%20file.vb)
 
-
-You can upload files in excel or upload files when working with a userform. This script can be attached to other functionalities in excel to achieve tasks that involve interacting with other files. The script opens a folder directory and the file types that are accessible by the user can be defined in the script.
 Click on "View" to access the code. Feel free to modify it for your personal use.
 
 ## **Restore Database Backups** [(View)](https://github.com/BasseyIsrael/Excel-VBA-Scripts/blob/main/VBA%20Scripts/Select%20a%20file.vb)
 
 
-You can upload files in excel or upload files when working with a userform. This script can be attached to other functionalities in excel to achieve tasks that involve interacting with other files. The script opens a folder directory and the file types that are accessible by the user can be defined in the script.
-Click on "View" to access the code. Feel free to modify it for your personal use.
+Restore previous backups created in a database, for database maintenance with admin rights. Click on "View" to access the code. Feel free to modify it for your personal use.
 
 ## **Set Default Database** [(View)](https://github.com/BasseyIsrael/Excel-VBA-Scripts/blob/main/VBA%20Scripts/Select%20a%20file.vb)
 
 
-You can upload files in excel or upload files when working with a userform. This script can be attached to other functionalities in excel to achieve tasks that involve interacting with other files. The script opens a folder directory and the file types that are accessible by the user can be defined in the script.
-Click on "View" to access the code. Feel free to modify it for your personal use.
+Create default database and schema following login and user initialization. Click on "View" to access the code. Feel free to modify it for your personal use.
