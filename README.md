@@ -4,12 +4,13 @@
 
 </div>
 
-
+<div align="justify">
  This repository provides access to various SQL commands I have found useful in functions that require database querying, administration and data processing. All scripts presented here are in .sql format, the codes can be easily copied, formatted, and applied at any application you would find them useful. Comments are also present in the codes to aid understanding. If you would like to collaborate on a project involving SQL, you can contact me on israelbssy@gmail.com.
 
 
 Please, feel free to contribute to the codes any way you can. Comment any script you would like for me to provide. Cheers!
  
+</div>
 
 
 <div align="center">
