@@ -89,23 +89,27 @@ The scripts contained in this repo are available in two folders:
 
 <div align='justify'>
 
-## **Creating a Database.** [(View)](https://github.com/BasseyIsrael/SQL-Execution-Scripts/blob/main/SQL%20Scripts%20(Database%20Querying)/Create%20Tables%20in%20a%20Database.sql)
+## **Creating a Database.** [(View)](https://github.com/BasseyIsrael/SQL-Execution-Scripts/blob/main/SQL%20Scripts%20(Database%20Querying)/Create%20a%20Database.sql)
 
 
 Following the aim of this repository, a simple database was created using  simple create script. The commands used give you ability to add comments to the database, and decide on the accessibility provided to the database with the GRANT command. Click on "View" to access the code. Feel free to modify it for your personal use.
 
 
-## **Create Tables in a Database.**[(View)](https://github.com/BasseyIsrael/Excel-VBA-Scripts/blob/main/VBA%20Scripts/Check%20WS%20Existence.vb)
+## **Create Tables in a Database.**[(View)](https://github.com/BasseyIsrael/SQL-Execution-Scripts/blob/main/SQL%20Scripts%20(Database%20Querying)/Create%20Tables%20in%20a%20Database.sql)
 
 
-When working with large files with multiple worksheets, it's easy to lose track of a worksheet especially when all you want to do is to check if the worksheet is present in the workbook before moving on to a new workbook. This script helps the user to quickly scan through the worksheets in a given workbook to confirm the existence of a given worksheet. With this, file searching becomes way easier especially for large files. You can expand this code to achieve more, like opening the specific worksheet with just one line of code. Click on "View" to access the code. Feel free to modify it for your personal use.
+With the demo database created, tables to work with in the schema can be created. This is the use of this part of the repository. here, you can find scripts that can help you create tables in a database with the necessary constraints and data types. For this repo, 8 tables are presented. Click on "View" to access the code. Feel free to modify it for your personal use.
 
 
 ## **Data Validation - Checking Numeric Values** [(View)](https://github.com/BasseyIsrael/Excel-VBA-Scripts/blob/main/VBA%20Scripts/Data%20Reset.vb)
 
 
-Following a data import from an external source, needs might arise to reset the data, clear contents and reload a new set of data especially when working with batch data or working on a template. Analysts may find this useful when building dashboards and there is need to reload data.
-Click on "View" to access the code. Feel free to modify it for your personal use.
+Handling Numeric values in a table present in a database is very key to querying and processing data. Different scripts for handling numeric values are presented here.
+
+- `Test 01` - Verify NoNulls() at a Column in a Table
+- `Test 02` - Verify NotNegative() where values are less than 0 in a Table
+- `Test 03` - Verify NumericRange() where column values lie between 100 and 999 in a table
+- `Test 04`
 
 
 ## **Data Validation - Checking Regular Expressions** [(View)](https://github.com/BasseyIsrael/Excel-VBA-Scripts/blob/main/VBA%20Scripts/File%20Names.cls)
