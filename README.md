@@ -158,7 +158,7 @@ Options for counting rows are presented here. Click on "View" to access the code
 
 Set of scripts to be used in data validation for handling date values as presented in the tables in the database. Click on "View" to access the code. Feel free to modify it for your personal use.
 
--  `Test 01` - Verify NoNulls() where time column has no nulls in table [countries]
+-  `Test 01` - Verify NoNulls() where time column has no nulls in table
 -  `Test 02` - Verify DateRange() where values in time column is not in the future nor too "old" in a table
 -  `Test 03` - Verify NoTimePart() where date of hire has no time part (is "12:00:00") in a table
 -  `Test 04` - Verify HasTimePart() where start time has time part (is not 12:00:00) in a table
