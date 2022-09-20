@@ -80,7 +80,7 @@ The scripts contained in this repo are available in two folders:
   - [Restore Database Backups](#restore-database-backups-view)
   - [Set Default Database](#set-default-database-view)
   
-================================================================
+============================================================================
 
 # **Explore Codes**
 
