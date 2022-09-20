@@ -1,5 +1,5 @@
 
--- This job step drop foreign key constraints to make data purging easier..
+-- This job step specifically drops foreign key constraints to make data purging easier..
 
 USE NetQuoteDevCut
 SET NOCOUNT ON
