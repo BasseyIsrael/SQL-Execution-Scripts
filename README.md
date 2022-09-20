@@ -1,3 +1,8 @@
+<h1 align="center">
+  <img src="SQL Banner.png" alt="SQL Scripts Banner" />
+</h1>
+
+
 <div align="center">
 
 # **SQL Execution Scripts**
