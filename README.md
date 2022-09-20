@@ -104,56 +104,91 @@ With the demo database created, tables to work with in the schema can be created
 ## **Data Validation - Checking Numeric Values** [(View)](https://github.com/BasseyIsrael/Excel-VBA-Scripts/blob/main/VBA%20Scripts/Data%20Reset.vb)
 
 
-Handling Numeric values in a table present in a database is very key to querying and processing data. Different scripts for handling numeric values are presented here.
+Handling Numeric values in a table present in a database is very key to querying and processing data. Different scripts for handling numeric values are presented here. Click on "View" to access the code. Feel free to modify it for your personal use.
 
 - `Test 01` - Verify NoNulls() at a Column in a Table
 - `Test 02` - Verify NotNegative() where values are less than 0 in a Table
 - `Test 03` - Verify NumericRange() where column values lie between 100 and 999 in a table
-- `Test 04`
+- `Test 04` - Verify InValueList() where column is in list (1,2,3,4) in a table
+- `Test 04` - Verify NotInValueList() where column value is not in list (97,98,99) in a table
+- `Test 05` - Verify MultiFieldCompare() where column 1 x column 2 <= $10,000 cap in a table
 
 
 ## **Data Validation - Checking Regular Expressions** [(View)](https://github.com/BasseyIsrael/Excel-VBA-Scripts/blob/main/VBA%20Scripts/File%20Names.cls)
 
+Work with character combinations easily with regular expressions when working with data. Different tests are presented here. Click on "View" to access the code. Feel free to modify it for your personal use.
 
-This script gives the user the option to obtain the list if files present in a folder based on a file type. The list obtained from the code is printed on an excel worksheet already specified. This is especially useful when managing a library (large scale or personal). Beyond the management of a library,m this code can also be applied in document control when creating a master list of documents when it is not provided by default by the document management system already in place.
-Click on "View" to access the code. Feel free to modify it for your personal use.
 
+- `Test 01` - Verify RegExp("IsPhoneNumber") where phone_number matches RegEx pattern "[0-9]{3}[-. ][0-9]{3}[-. ][0-9]{4}" in table column
+- `Test 02` - Test 02 - Verify RegExp("IsSSN") where [fake_ssn] matches RegEx pattern "^[0-9]{3}-[0-9]{2}-[0-9]{4}$" in table column.
+- `Test 03` - Verify RegExp("IsZip5") where [zip5] matches RegEx pattern "^[0-9]{5}$" in table column.
+- `Test 04` - Verify RegExp("IsZip5or9") where [zip5or9] matches RegEx pattern "^[[:digit:]]{5}(-[[:digit:]]{4})?$" in table column.
+- `Test 05` - Verify RegExp("IsZip9") where [zip9] matches RegEx pattern "^[[:digit:]]{5}[-/.][[:digit:]]{4}$" in table column.
+- `Test 06` - Verify RegExp("OnlyText") where [last_name] matches RegEx pattern "^[a-zA-Z ]+$" in table column.
+- `Test 07` - Verify RegExp("OnlyNumeric") where [zip5] matches RegEx pattern "^[0-9]+$" in table column.
+- `Test 08` - Verify RegExp("NoLeadTrailSpaces") where [last_name] matches RegEx pattern "(^\s)|(\s$)" in table column
+- `Test 09` - Verify RegExp("NoWhitespaces") where [job_id] matches RegEx pattern "(\s)+" in table column.
+- `Test 10` - Verify RegExp("OnlyLowerCase") at 3rd and 4th chars of [first_name] matching RegEx pattern "^[a-z]+$" in table column.
+- `Test 11` - Verify RegExp("OnlyUpperCase") where [email] matching RegEx pattern "^[A-Z]+$" in table column.
+- `Test 12` - Verify RegExp("TitleCase") where [first_name] upper cases first letter second name too and matches RegEx pattern "(\s[A-Z]){1}" in table column.
+- `Test 13` - Verify RegExp("EmailAddress") where [email_address] matches RegEx pattern "^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$" in table column.
+- `Test 14` - Test 14 - Verify RegExp("IsUrl") where [url] matches RegEx pattern "(http)(s)?(:\/\/)" in table column.
 
 
 ## **Data Validation - Checking Text Values** [(View)](https://github.com/BasseyIsrael/Excel-VBA-Scripts/blob/main/VBA%20Scripts/Import%20or%20Copy%20Data.vb)
 
 
-This script gives the user the ability to import data from an external excel source. The script opens a file selection window where the source file can be selected and the data is copied to the new worksheet and pasted as values. A box is also needed for the filename to be printed to. The imported data can be used by ana analyst to perform a form of routine analysis on a template, or create dashboards when working woth batch data. A script is also provided to clear the imported data and it can be accessed [here](https://github.com/BasseyIsrael/Excel-VBA-Scripts/blob/main/VBA%20Scripts/Data%20Reset.vb).
-Click on "View" to access the code. Feel free to modify it for your personal use.
+
 
 
 
 ## **Data Validation - Counting Rows** [(View)](https://github.com/BasseyIsrael/Excel-VBA-Scripts/blob/main/VBA%20Scripts/List%20of%20WS.vb)
 
 
-A management technique for handling large files is provided with this script. Here, you can provide a list of all the worksheets present in a workbook. This is mostly applicable in an organizational context for reports logging and access management. The use of this script can help speed up the process of urgent reporting for multiple files.
-Click on "View" to access the code. Feel free to modify it for your personal use.
+Options for counting rows are presented here. Click on "View" to access the code. Feel free to modify it for your personal use.
+
+- `Test 01` - Verify FullRowCount() = 25 at a table column
+- `Test 02` - Verify PartialRowCount() = 8 where column value = 1 (Europe) in corresponding table(s)
+- `Test 03` - Verify RelativeRowCount() of column 1 row count >= 5x table column 2 row count
+- `Test 04` - Verify RecentRowCount() >= 5 in specific column where update has occured in past
 
 
 ## **Data Validation - Handling Date Values** [(View)](https://github.com/BasseyIsrael/Excel-VBA-Scripts/blob/main/VBA%20Scripts/Lookup%20Data.vb)
 
 
-Here, a function is provided to perform lookup on data more easily than the excel builtin lookup functions. Arguments are provided in the function and they are easy to use. Use this custom function in your workbook or you can attach iit to a larger block of code as you would like to use it.  
-Click on "View" to access the code. Feel free to modify it for your personal use.
+Set of scripts to be used in data validation for handling date values as presented in the tables in the database. Click on "View" to access the code. Feel free to modify it for your personal use.
+
+-  `Test 01` - Verify NoNulls() where time column has no nulls in table [countries]
+-  `Test 02` - Verify DateRange() where values in time column is not in the future nor too "old" in a table
+-  `Test 03` - Verify NoTimePart() where date of hire has no time part (is "12:00:00") in a table
+-  `Test 04` - Verify HasTimePart() where start time has time part (is not 12:00:00) in a table
+- `Test 05` - Verify MultiFieldCompare() where start date must be < [end_date] in a table
+
 
 
 ## **Data Validation - Known Defect Checks** [(View)](https://github.com/BasseyIsrael/Excel-VBA-Scripts/blob/main/VBA%20Scripts/Rename%20Worksheets.vb)
 
 
-This script helps one to rename all the worksheets in your workbook based on cell value. When there are several worksheets in a workbook, renaming all of them one after the other could become a herculean task. However, with the extreme likelihood that there is a uniformity in the cell header or a specific defining cell common to all the worksheets, this script can easily attach names to all the worksheets bases on those defining cell values. The code block is expandable to carry more functionalities.
-Click on "View" to access the code. Feel free to modify it for your personal use.
+Set of scripts to be used in data validation for checking known defects with defects regression that come up over time in the database are presented here.  Click on "View" to access the code. Feel free to modify it for your personal use.
+
+- `Test 02` - Verify ValueFrequencyThresholds()" for regional values (eg: value=1 for 28% to 36% of rows) in table
+- `Test 03` - VerVerify NoNulls() at table column in table  for past 30 days
+- `Test 04` - Verify NoNulls() at region column in table ignoring 3 known bad rows 
+- `Test 05` - Verify dozens of checks in a single table scan pass against table for best performance
+- `Test 06` - Reference configuration settings from a temporary lookup table
 
 
 
 ## **Data Validation - Schema Monitoring** [(View)](https://github.com/BasseyIsrael/Excel-VBA-Scripts/blob/main/VBA%20Scripts/Save%20and%20send%20email.vb)
 
-In this case, reporting and sending updates is optimized by giving a user the ability to automatically save a reporting sheet as a pdf file into a specified file location and sending an email to a specific recipient with the saved pdf file attached to the email on outlook. A use case of this script is when a routine update on a specific analysis is required by a manager or a set of staff. A window to select the folder is used in this case however, one can simply change the save folder to a constant folder path. A date cell is also advisable to have so it can be easy to track the files  that have been saved. In an organizational context, a cell containing the document number can be used in place of "current date" for the filename.
-Click on "View" to access the code. Feel free to modify it for your personal use.
+
+--Set of scripts to be used in data validation for monitoring schemas present in the tables in the database are presented here.  Click on "View" to access the code. Feel free to modify it for your personal use.
+
+- `Test 01` - Verify TableStructure("BySQL") by comparing snapshot in SQL code vs actual schema/structure for table
+- `Test 02` - Verify TableData("BySQL") - Data should not change for table
+- `Test 03` - Verify TableData("By2TableCompare") - Table data should exactly match
+
+
 
 ## **Data Validation - Threshold & Relativity Analysis** [(View)](https://github.com/BasseyIsrael/Excel-VBA-Scripts/blob/main/VBA%20Scripts/Save%20as%20CSV.vb)
 
