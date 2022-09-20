@@ -158,7 +158,7 @@ Options for counting rows are presented here. Click on "View" to access the code
 
 Set of scripts to be used in data validation for handling date values as presented in the tables in the database. Click on "View" to access the code. Feel free to modify it for your personal use.
 
--  `Test 01` - Verify NoNulls() where time column has no nulls in table [countries]
+-  `Test 01` - Verify NoNulls() where time column has no nulls in table 
 -  `Test 02` - Verify DateRange() where values in time column is not in the future nor too "old" in a table
 -  `Test 03` - Verify NoTimePart() where date of hire has no time part (is "12:00:00") in a table
 -  `Test 04` - Verify HasTimePart() where start time has time part (is not 12:00:00) in a table
@@ -229,7 +229,7 @@ Click on "View" to access the code. Feel free to modify it for your personal use
 # Administrator Codes
 
 
-## **Add a New Database Operator.** [(View)](https://github.com/BasseyIsrael/Excel-VBA-Scripts/blob/main/VBA%20Scripts/Select%20a%20file.vb)
+## **Add a New Database Operator.** [(View)](https://github.com/BasseyIsrael/SQL-Execution-Scripts/blob/main/SQL%20Scripts%20(Database%20Administration)/Add%20a%20New%20Operator.sql)
 
 
 This script can be used to add a new operator to your SQL Database. BE careful with this script as operator privilages can likely permanently or temporarily alter the Database structure and content.
@@ -237,33 +237,33 @@ Click on "View" to access the code. Feel free to modify it for your personal use
 
 
 
-## **Add Alerts and Notifications.** [(View)](https://github.com/BasseyIsrael/Excel-VBA-Scripts/blob/main/VBA%20Scripts/Check%20File%20Existence.vb)
+## **Add Alerts and Notifications.** [(View)](https://github.com/BasseyIsrael/SQL-Execution-Scripts/blob/main/SQL%20Scripts%20(Database%20Administration)/Add%20Alerts.sql)
 
 
 Add alerts and notifications to job activities in SQL Database. Apply this to get regular updates, useful especially when there are multiple operators in a Database Server, there is a supervisor, or for general accountability and logging. Click on "View" to access the code. Feel free to modify it for your personal use.
 
 
-## **Add Email Notification for Failed SQL Server Agent Jobs.**[(View)](https://github.com/BasseyIsrael/Excel-VBA-Scripts/blob/main/VBA%20Scripts/Check%20WS%20Existence.vb)
+## **Add Email Notification for Failed SQL Server Agent Jobs.**[(View)](https://github.com/BasseyIsrael/SQL-Execution-Scripts/blob/main/SQL%20Scripts%20(Database%20Administration)/Add%20Email%20Notification%20for%20Failed%20SQL%20Server%20Agent%20Jobs.sql)
 
 
 Create direct email notifications for failed jobs with SQL script. Here an easy way to setup alerts for all sql agent jobs. In this case, it is advisable to use group email address rather than individuals to make this a one-time setup. Click on "View" to access the code. Feel free to modify it for your personal use.
 
 
-## **Add Gmail as Database Main Account** [(View)](https://github.com/BasseyIsrael/Excel-VBA-Scripts/blob/main/VBA%20Scripts/Data%20Reset.vb)
+## **Add Gmail as Database Main Account** [(View)](https://github.com/BasseyIsrael/SQL-Execution-Scripts/blob/main/SQL%20Scripts%20(Database%20Administration)/Add%20Gmail%20as%20DB%20Main%20Account.sql)
 
 
 Add gmail account as Profile's mail account for activities logging and monitoring purposes.
 Click on "View" to access the code. Feel free to modify it for your personal use.
 
 
-## **Add Linked Server** [(View)](https://github.com/BasseyIsrael/Excel-VBA-Scripts/blob/main/VBA%20Scripts/File%20Names.cls)
+## **Add Linked Server** [(View)](https://github.com/BasseyIsrael/SQL-Execution-Scripts/blob/main/SQL%20Scripts%20(Database%20Administration)/Add%20Linked%20Server.sql)
 
 
 Add Linked server passing the login used for Kerberos AUTH. Click on "View" to access the code. Feel free to modify it for your personal use.
 
 
 
-## **Add User to Azure Database and Add Role Membership** [(View)](https://github.com/BasseyIsrael/Excel-VBA-Scripts/blob/main/VBA%20Scripts/Import%20or%20Copy%20Data.vb)
+## **Add User to Azure Database and Add Role Membership** [(View)](https://github.com/BasseyIsrael/SQL-Execution-Scripts/blob/main/SQL%20Scripts%20(Database%20Administration)/Add%20User%20to%20Azure%20DB%20and%20Add%20Role%20Membership.sql)
 
 Apply this section to ass a user to Azure database and also include the personnel's role membership. It should be noted that for this script, database compatibility level must be 130 for string_split function to work otherwise adding the user to datbase role will fail.
 Use ALTER DATABASE to change the compatibility level of the database. The new compatibility level setting for a database takes effect when a `USE <database>` command is issued, or a new login is processed with that database as the default database context. To view the current compatibility level of a database, 
@@ -274,23 +274,23 @@ Click on "View" to access the code. Feel free to modify it for your personal use
 
 
 
-## **Checking for Long Running Jobs** [(View)](https://github.com/BasseyIsrael/Excel-VBA-Scripts/blob/main/VBA%20Scripts/List%20of%20WS.vb)
+## **Checking for Long Running Jobs** [(View)](https://github.com/BasseyIsrael/SQL-Execution-Scripts/blob/main/SQL%20Scripts%20(Database%20Administration)/Checking%20for%20Long%20Running%20Jobs.sql)
 
 
 Check for long running jobs as Database Admin. Click on "View" to access the code. Feel free to modify it for your personal use.
 
 
-## **Create Foreign Key Information** [(View)](https://github.com/BasseyIsrael/Excel-VBA-Scripts/blob/main/VBA%20Scripts/Lookup%20Data.vb)
+## **Create Foreign Key Information** [(View)](https://github.com/BasseyIsrael/SQL-Execution-Scripts/blob/main/SQL%20Scripts%20(Database%20Administration)/Create%20Foreign%20key%20Information.sql)
 
 
 Create Foreign Key information and store information on a table. Click on "View" to access the code. Feel free to modify it for your personal use.
 
-## **Create Transaction Log Table** [(View)](https://github.com/BasseyIsrael/Excel-VBA-Scripts/blob/main/VBA%20Scripts/Select%20a%20file.vb)
+## **Create Transaction Log Table** [(View)](https://github.com/BasseyIsrael/SQL-Execution-Scripts/blob/main/SQL%20Scripts%20(Database%20Administration)/Create%20Transaction%20Log%20Table.sql)
 
 
 Monitoring transaction activities in a database is one of the key functionalities of an adminisrator. Use this script to create a transction log table to monitor transaction activities on database. Click on "View" to access the code. Feel free to modify it for your personal use.
 
-## **Database Integrity Check** [(View)](https://github.com/BasseyIsrael/Excel-VBA-Scripts/blob/main/VBA%20Scripts/Rename%20Worksheets.vb)
+## **Database Integrity Check** [(View)](https://github.com/BasseyIsrael/SQL-Execution-Scripts/blob/main/SQL%20Scripts%20(Database%20Administration)/Database%20Integrity%20Check.sql)
 
 
 Database integrity checks on user databases for purposes involving database maintenance. 
@@ -298,57 +298,57 @@ This can be a running script or a periodic manually operated process for your da
 
 
 
-## **Drop Foreign Key and Create Foreign Key** [(View)](https://github.com/BasseyIsrael/Excel-VBA-Scripts/blob/main/VBA%20Scripts/Save%20and%20send%20email.vb)
+## **Drop Foreign Key and Create Foreign Key** [(View)](https://github.com/BasseyIsrael/SQL-Execution-Scripts/blob/main/SQL%20Scripts%20(Database%20Administration)/Drop%20Foreign%20Key%20%26%20Create%20Foreign%20Key.sql)
 
 Simple script to drop foreign keys from database and to recreate foreign keys constraints in a database. Click on "View" to access the code. Feel free to modify it for your personal use.
 
-## **Drop Old Tables** [(View)](https://github.com/BasseyIsrael/Excel-VBA-Scripts/blob/main/VBA%20Scripts/Save%20as%20CSV.vb)
+## **Drop Old Tables** [(View)](https://github.com/BasseyIsrael/SQL-Execution-Scripts/blob/main/SQL%20Scripts%20(Database%20Administration)/Drop%20Old%20Tables.sql)
 
 Drop old tables existing in database following a specified period and use cases. Ensure that this script is properly monitored as dropping tables often leads to dangerous results in database administration. Click on "View" to access the code. Feel free to modify it for your personal use.
 
 
-## **Drop Statement Executed from Stored Table** [(View)](https://github.com/BasseyIsrael/Excel-VBA-Scripts/blob/main/VBA%20Scripts/Save%20as%20xlsx.vb)
+## **Drop Statement Executed from Stored Table** [(View)](https://github.com/BasseyIsrael/SQL-Execution-Scripts/blob/main/SQL%20Scripts%20(Database%20Administration)/Drop%20Statement%20Executed%20from%20Stored%20Table.sql)
 
 This job step specifically drops foreign key constraints to make data purging easier. Click on "View" to access the code. Feel free to modify it for your personal use.
 
 
-## **Find an ID Gap in a Table** [(View)](https://github.com/BasseyIsrael/Excel-VBA-Scripts/blob/main/VBA%20Scripts/Save%20File.vb)
+## **Find an ID Gap in a Table** [(View)](https://github.com/BasseyIsrael/SQL-Execution-Scripts/blob/main/SQL%20Scripts%20(Database%20Administration)/Find%20an%20ID%20Gap%20in%20a%20Table.sql)
 
 WArrange a table in a database to find gaps in the IDs listed in the table using arrangment commands `(DENSE RANK, MIN, MAX, ORDER BY)`. 
 Click on "View" to access the code. Feel free to modify it for your personal use.
 
 
-## **Find Orphaned Users in Each User Database** [(View)](https://github.com/BasseyIsrael/Excel-VBA-Scripts/blob/main/VBA%20Scripts/Screen%20Settings.vb)
+## **Find Orphaned Users in Each User Database** [(View)](https://github.com/BasseyIsrael/SQL-Execution-Scripts/blob/main/SQL%20Scripts%20(Database%20Administration)/FInd%20Orphan%20Users%20in%20Each%20User%20Database.sql)
 
 
 Script to discover orphaned database users linked to a/an SQL Server login. This is necessary for access control to a database following context and permission. Click on "View" to access the code. Feel free to modify it for your personal use.
 
 
-## **Know when a Table is updated** [(View)](https://github.com/BasseyIsrael/Excel-VBA-Scripts/blob/main/VBA%20Scripts/Select%20a%20file.vb)
+## **Know when a Table is updated** [(View)](https://github.com/BasseyIsrael/SQL-Execution-Scripts/blob/main/SQL%20Scripts%20(Database%20Administration)/Know%20When%20a%20Table%20is%20Updated.sql)
 
 
 Obtain data containing previous updates made to a table including lookups, scans, seeks, and object information. Click on "View" to access the code. Feel free to modify it for your personal use.
 
-## **Obtain Server Role Membership** [(View)](https://github.com/BasseyIsrael/Excel-VBA-Scripts/blob/main/VBA%20Scripts/Select%20a%20file.vb)
+## **Obtain Server Role Membership** [(View)](https://github.com/BasseyIsrael/SQL-Execution-Scripts/blob/main/SQL%20Scripts%20(Database%20Administration)/Obtain%20Server%20Role%20Membership.sql)
 
 
 Obtain Server role membership on SQL server by a Database Administrator. Click on "View" to access the code. Feel free to modify it for your personal use.
 
-## **Recreate Foreign Keys** [(View)](https://github.com/BasseyIsrael/Excel-VBA-Scripts/blob/main/VBA%20Scripts/Select%20a%20file.vb)
+## **Recreate Foreign Keys** [(View)](https://github.com/BasseyIsrael/SQL-Execution-Scripts/blob/main/SQL%20Scripts%20(Database%20Administration)/Recreate%20Foreign%20Keys.sql)
 
 
 Following data purge, this script can be used to recreate foreign key constraints used in a database. Click on "View" to access the code. Feel free to modify it for your personal use.
 
-## **Remove SA Account** [(View)](https://github.com/BasseyIsrael/Excel-VBA-Scripts/blob/main/VBA%20Scripts/Select%20a%20file.vb)
+## **Remove SA Account** [(View)](https://github.com/BasseyIsrael/SQL-Execution-Scripts/blob/main/SQL%20Scripts%20(Database%20Administration)/Remove%20SA%20Account.sql)
 
 Click on "View" to access the code. Feel free to modify it for your personal use.
 
-## **Restore Database Backups** [(View)](https://github.com/BasseyIsrael/Excel-VBA-Scripts/blob/main/VBA%20Scripts/Select%20a%20file.vb)
+## **Restore Database Backups** [(View)](https://github.com/BasseyIsrael/SQL-Execution-Scripts/blob/main/SQL%20Scripts%20(Database%20Administration)/Restore%20Database%20Backups.sql)
 
 
 Restore previous backups created in a database, for database maintenance with admin rights. Click on "View" to access the code. Feel free to modify it for your personal use.
 
-## **Set Default Database** [(View)](https://github.com/BasseyIsrael/Excel-VBA-Scripts/blob/main/VBA%20Scripts/Select%20a%20file.vb)
+## **Set Default Database** [(View)](https://github.com/BasseyIsrael/SQL-Execution-Scripts/blob/main/SQL%20Scripts%20(Database%20Administration)/Set%20Default%20Database.sql)
 
 
 Create default database and schema following login and user initialization. Click on "View" to access the code. Feel free to modify it for your personal use.
