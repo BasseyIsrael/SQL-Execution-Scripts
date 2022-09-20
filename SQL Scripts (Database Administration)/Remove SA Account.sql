@@ -1,1 +1,1 @@
-ALTER LOGIN [sa] WITH NAME = [somethingreallyhardtofigureout]
+ALTER LOGIN [sa] WITH NAME = ['something_really_hard_to_figure_out']
