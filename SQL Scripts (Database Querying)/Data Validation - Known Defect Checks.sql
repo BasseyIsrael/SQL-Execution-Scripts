@@ -34,7 +34,7 @@
 	;
 
  
--- Test 03  
+-- Test 03 - VerVerify NoNulls() at [region_id] in table [countries] for past 30 days
     SELECT 'T02' AS tst_id
          , CASE WHEN COUNT(*) > 0 THEN 'FAIL' ELSE 'P' END AS status
          , '"X#2 LimitToRecent" - VerVerify NoNulls() at [region_id] in table [countries] for past 30 days' AS tst_descr   
